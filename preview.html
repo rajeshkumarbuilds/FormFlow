@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Application Preview</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+ <nav>
+        <div class="logo">FormFlow</div>
+        <div class="menu">
+            <!-- <ul>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="address.html">Address</a></li>
+                <li><a href="preview.html">View/Edit</a></li>
+                <li><a href="submit.html">Submit</a></li>
+            </ul> -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About us</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="preview-container">
+ <section class="pagesRef">
+            <div class="step ">
+                <span>1</span>
+                <p>Personal Info</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>2</span>
+                <p>Education</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>3</span>
+                <p>Documents</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step active">
+                <span>4</span>
+                <p>Preview</p>
+            </div>
+        </section>
+
+        <h1>Application Preview</h1>
+
+        <!-- Personal Information -->
+        <section class="preview-section">
+
+            <div class="section-header">
+                <h2>Personal Information</h2>
+                <a href="personal.html" onclick="personaldata()">Edit</a>
+            </div>
+
+            <div id="personalPreview" class="details"></div>
+
+        </section>
+
+
+        <!-- Education -->
+        <section class="preview-section">
+
+            <div class="section-header">
+                <h2>Education</h2>
+                <a href="education.html">Edit</a>
+            </div>
+
+            <div id="educationPreview" class="details"></div>
+
+        </section>
+
+
+        <!-- Documents -->
+        <section class="preview-section">
+
+            <div class="section-header">
+                <h2>Documents</h2>
+                <a href="document.html" onclick="editF(1)">Edit</a>
+            </div>
+
+            <div id="documentsPreview" class="details"></div>
+
+        </section>
+
+
+        <div class="actions">
+
+            <a id="submitApplication" href="submit.html">
+                Submit Application
+            </a>
+                <button id="submitApplication" class="print">Print</button>
+        </div>
+
+    </main>
+
+    <script src="js/database.js"></script>
+    <script src="/js/preview.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Multi-page Form Website.">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">FormFlow</div>
+        <div class="menu">
+            <!-- <ul>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="address.html">Address</a></li>
+                <li><a href="preview.html">View/Edit</a></li>
+                <li><a href="submit.html">Submit</a></li>
+            </ul> -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About us</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- Page References / Progress -->
+        <section class="pagesRef">
+            <div class="step ">
+                <span>1</span>
+                <p>Personal Info</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step ">
+                <span>2</span>
+                <p>Education</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step active">
+                <span>3</span>
+                <p>Documents</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>4</span>
+                <p>Declaration</p>
+            </div>
+        </section>
+
+        <!-- Current Page Form -->
+        <section class="personalinfo">
+            <h2>Education Information</h2>
+            <p>Please enter your educational details.</p>
+
+            <form id="documentForm">
+
+                <!-- Haryana Resident -->
+                <div class="form-group resident">
+                    <label for="haryanaResident">
+                        Are you a resident of Haryana?
+                    </label>
+
+                    <select id="haryanaResident" name="haryanaResident" required>
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <!-- Residence Certificate -->
+                <div class="document-row" id="haryanaResidentCertificate">
+                    <div class="document-info">
+                        <label for="residenceNumber">
+                            Haryana Residence Certificate
+                        </label>
+                        <input type="text" id="residenceNumber" name="residenceNumber"
+                            placeholder="Enter certificate number" required>
+                    </div>
+
+                    <div class="document-file">
+                        <label for="residenceFile">Upload PDF</label>
+                        <input type="file" class="pdfFile" id="residenceFile" name="residenceFile" accept="application/pdf" required>
+                    </div>
+                </div>
+
+
+                <!-- Aadhaar -->
+                <div class="document-row">
+
+
+                    <div class="document-info">
+                        <label for="aadhaarNumber">Aadhaar Card</label>
+                        <input type="text" id="aadhaarNumber" name="aadhaarNumber" placeholder="Enter Aadhaar number"
+                            required>
+                    </div>
+
+                    <div class="document-file">
+                        <label for="aadhaarFile">Upload PDF</label>
+                        <input type="file" class="pdfFile" id="aadhaarFile" name="aadhaarFile" accept="application/pdf" required>
+                    </div>
+                </div>
+
+
+                <!-- PPP -->
+                <div class="document-row">
+                    <div class="document-info">
+                        <label for="pppNumber">Parivar Pehchan Patra (PPP)</label>
+                        <input type="text" id="pppNumber" name="pppNumber" placeholder="Enter PPP number" required>
+                    </div>
+
+                    <div class="document-file">
+                        <label for="pppFile">Upload PDF</label>
+                        <input type="file" class="pdfFile" id="pppFile" name="pppFile" accept="application/pdf" required>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Income Certificate -->
+                <div class="document-row">
+                    <div class="document-info">
+                        <label for="incomeNumber">
+                            Income Certificate
+                        </label>
+                        <input type="text" id="incomeNumber" name="incomeNumber" placeholder="Enter certificate number"
+                            required>
+                    </div>
+
+                    <div class="document-file">
+                        <label for="incomeFile">Upload PDF</label>
+                        <input type="file" class="pdfFile" id="incomeFile" name="incomeFile" accept="application/pdf" required>
+                    </div>
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="btns">
+
+                    <button type="submit" class="save" id="save">
+                        Save
+                    </button>
+
+                    <div>
+                        <a class="previous" id="previous" href="education.html">
+                            Previous
+                        </a>
+
+                        <a class="next" id="next" href="preview.html" aria-disabled="true">
+                            Preview
+                        </a>
+                    </div>
+
+                </div>
+
+            </form>
+
+
+        </section>
+    </main>
+    <script src="/js/database.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Multi-page Form Website.">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">FormFlow</div>
+        <div class="menu">
+            <!-- <ul>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="address.html">Address</a></li>
+                <li><a href="preview.html">View/Edit</a></li>
+                <li><a href="submit.html">Submit</a></li>
+            </ul> -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About us</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- Page References / Progress -->
+        <section class="pagesRef">
+            <div class="step ">
+                <span>1</span>
+                <p>Personal Info</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step active">
+                <span>2</span>
+                <p>Education</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>3</span>
+                <p>Documents</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <span>4</span>
+                <p>Declaration</p>
+            </div>
+        </section>
+
+        <!-- Current Page Form -->
+        <section class="personalinfo">
+            <h2>Education Information</h2>
+            <p>Please enter your educational details.</p>
+
+           <form id="educationForm">
+
+    <div class="form-group">
+        <label for="qualification">Highest Qualification</label>
+        <select id="qualification" name="qualification" required>
+            <option value="">Select qualification</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="diploma">Diploma</option>
+            <option value="graduation">Graduation</option>
+            <option value="post-graduation">Post Graduation</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="institution">School / College Name</label>
+        <input type="text" id="institution" name="institution" required>
+    </div>
+
+    <div class="form-group">
+        <label for="course">Course / Degree</label>
+        <input type="text" id="course" name="course" required>
+    </div>
+
+    <div class="form-group">
+        <label for="specialization">Specialization</label>
+        <input type="text" id="specialization" name="specialization">
+    </div>
+
+    <div class="form-group">
+        <label for="passingYear">Passing Year</label>
+        <input 
+            type="number" 
+            id="passingYear" 
+            name="passingYear"
+            min="1950"
+            max="2026"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="percentage">Percentage / CGPA</label>
+        <input 
+            type="number" 
+            id="percentage" 
+            name="percentage"
+            step="0.01"
+            min="0"
+            max="100"
+            required
+        >
+    </div>
+
+    <div class="btns">
+        <button type="submit" class="save" id="save">Save</button>
+
+        <div>
+            <a class="previous" id="previous" href="personal.html">
+                Previous
+            </a>
+
+            <a class="next" id="next" href="document.html" aria-disabled="true">
+                Next
+            </a>
+        </div>
+    </div>
+
+</form>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

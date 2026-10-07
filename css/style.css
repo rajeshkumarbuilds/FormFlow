@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.255);
+}
+
+.logo {
+    font-size: 1.2rem;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+main {
+    min-height: calc(100vh - 70px);
+    padding: 20px 80px;
+
+
+}
+
+.announcement {
+    /* border: 2px solid red; */
+    min-height: 50vh;
+}
+
+.intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.announcement ul {
+    font-size: 1.1rem;
+}
+
+.announcementCont {
+    padding: 10px;
+}
+
+.sectionPart {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.255);
+
+}
+
+.declaration {
+    /* border: 2px solid red; */
+    margin-top: 10px;
+}
+
+.declarationCont {
+    border: 1px solid rgba(0, 0, 0, 0.325);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.declarationBox {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.declaration-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.declaration-check input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#startForm {
+    text-decoration: none;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background: #ccc;
+    color: #777;
+    font-size: 0.9rem;
+    cursor: not-allowed;
+}
+
+#startForm.enabled {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* responsiveness for index.html */
+@media (max-width:892px) {
+    nav {
+        flex-direction: column;
+        padding: 5px 5px;
+
+    }
+
+    nav ul {
+        gap: 40px;
+    }
+
+    .logo {
+        font-weight: 800;
+    }
+
+    main {
+        padding: 5px 5px;
+
+    }
+
+    .announcement {
+        padding-bottom: 0px;
+
+    }
+
+    .announcement h1 {
+        font-size: 1.2rem;
+    }
+
+    .announcementCont {
+        padding: 5px;
+    }
+
+    .announcementCont p {
+        font-size: 0.8rem;
+    }
+
+    .announcement ul {
+        list-style: none;
+        font-size: 0.8rem;
+    }
+
+    .declaration {
+        margin-top: 3px;
+    }
+
+    .declaration h2 {
+        font-size: 1.2rem;
+    }
+
+    .declarationCont {
+        padding: 5px;
+    }
+
+    .declarationCont p {
+        font-size: 0.8rem;
+    }
+
+    .declarationBox {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* personal.css */
+
+main {
+    min-height: calc(100vh - 70px);
+    padding: 22px 8%;
+    background: #f5f7fa;
+}
+
+/* Top page references */
+.pagesRef {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+}
+
+.step span {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.step p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.step.active span {
+    background: #007bff;
+    color: white;
+}
+
+.step.active p {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background: #ddd;
+    margin-bottom: 25px;
+}
+
+/* Form section */
+.personalinfo {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 17px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.personalinfo h2 {
+    margin-bottom: 8px;
+}
+
+.personalinfo>p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    outline: none;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+.save {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.next {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #ccc;
+    color: #777;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+#next.enabled {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:470px) {
+
+    main {
+        padding: 20px 5px 0px 5px;
+    }
+
+    /* Top page references */
+    .pagesRef {
+        display: none;
+       
+    }
+
+    .btns {
+        padding: 0px 20px;
+    }
+
+    .save {
+        padding: 5px 12px;
+    }
+
+    .next {
+        padding: 5px 12px;
+    }
+
+
+}
+.previous{
+     padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+   background: #ff60b8;
+    color: white;
+    cursor:pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+
+/* document.html */
+.document-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: end;
+    margin-bottom: 25px;
+
+}
+#haryanaResidentCertificate{
+    display:none;
+}
+.document-info,
+.document-file {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.document-info label,
+.document-file label {
+    font-weight: 600;
+}
+
+.document-info input,
+.document-file input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* preview.html */
+.preview-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.preview-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.section-header a {
+    text-decoration: none;
+}
+
+.detail-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.label {
+    width: 40%;
+    font-weight: bold;
+}
+
+.value {
+    width: 60%;
+}
+
+.actions {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.actions a{
+    text-decoration: none;
+}
+#submitApplication {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* submit.html */
+
+.success-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.success-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 45px 35px;
+    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #22c55e;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.success-card h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.success-message {
+    color: #555;
+    line-height: 1.6;
+}
+
+.submission-info {
+    margin: 25px 0;
+    padding: 15px;
+    text-align: left;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.submission-info p {
+    margin: 8px 0;
+}
+
+.note {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.home-btn:hover {
+    background: #333;
+}
