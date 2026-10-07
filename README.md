@@ -54,15 +54,9 @@ FormFlow/
 │   └── style.css
 │
 ├── js/
-│   ├── personal.js
-│   ├── education.js
-│   ├── address.js
 │   ├── preview.js
-│   ├── submit.js
-│   └── db.js
-│
-├── assets/
-│   └── images/
+│   ├── scripts.js
+│   └── database.js
 │
 └── README.md
 ```
