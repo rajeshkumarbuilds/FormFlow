@@ -214,14 +214,14 @@ Possible improvements include:
 
 ## 👨‍💻 Author
 
-**Rajesh**
+**Rajesh Kumar**
 
 Aspiring Full-Stack / MERN Stack Developer
 
 ### Connect With Me
 
-- GitHub: `Add your GitHub profile link`
-- LinkedIn: `Add your LinkedIn profile link`
+- GitHub: https://www.github.com/rajeshkumarbuilds/
+- LinkedIn: https://www.linkedin.com/in/rajesh-builds/
 
 ---
 
